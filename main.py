@@ -1,7 +1,8 @@
 from calculator_modules.arithmetic import add, subtract, multiply, divide
 
-try:
-    def main():
+
+def main():
+    try:
         print("Добро пожаловать в калькулятор!")
         a = float(input("Введите первое число: "))
         b = float(input("Введите второе число: "))
@@ -20,11 +21,12 @@ try:
 
         print(f"Результат: {result}")
 
-except ZeroDivisionError:
-    print("Не дели на 0")
+    except ZeroDivisionError:
+        print("Не дели на 0")
 
-except ValueError:
-    print('Введено не число')
+    except ValueError:
+        print('Введено не число')
+
 
 class NegativeNumberError(Exception):
     """исключение если отрицательное число"""
