@@ -20,9 +20,6 @@ try:
 
         print(f"Результат: {result}")
 
-        # if __name__ == "__main__":
-        # main()
-
 except ZeroDivisionError:
     print("Не дели на 0")
 
@@ -36,4 +33,8 @@ class NegativeNumberError(Exception):
 #     print("Операция завершена")
 
 def sqrt_win_check(x):
-    """корень с проверкой.Для отрицательного числа выбрасывает свое исключение"""   
+    """корень с проверкой.Для отрицательного числа выбрасывает свое исключение"""
+
+
+if __name__ == "__main__":
+    main()
