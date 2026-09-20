@@ -16,7 +16,4 @@ def multiply(x, y):
 
 def divide(x, y):
     """Возвращает частное двух чисел. Деление на ноль вызывает ошибку"""
-    if y != 0:
-        return x / y
-    else:
-        return "Ошибка: деление на ноль"
+    return x / y
