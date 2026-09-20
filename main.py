@@ -27,12 +27,13 @@ def main():
     except ValueError:
         print('Введено не число')
 
+    finally:
+        print("Операция завершена")
+
 
 class NegativeNumberError(Exception):
     """исключение если отрицательное число"""
 
-# finally:
-#     print("Операция завершена")
 
 def sqrt_win_check(x):
     """корень с проверкой.Для отрицательного числа выбрасывает свое исключение"""
