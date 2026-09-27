@@ -1,0 +1,28 @@
+def main():
+    while (True):
+        print("\n1.добавить книгу")
+        print("2.показать все книги")
+        print("3.пункт")
+        choice =input("выбери пункт").strip()
+
+        if choice == "1":
+           title = input("название:")
+           author = input("автор:")
+           year=input("год")
+           add_book(title,author,year)
+           print("книга добавлена")
+        elif choice == "2":
+            show_books()
+        elif choice == "3":
+            print("До свидания!")
+            break       # в единственный выход из while  True
+        else:
+            # Ветка else обязательно: без неё опечатка в пункте меню
+            # выглядит как программа зависла, хотя она просто молчит.
+            print("Нет такого пункта. Введи 1, 2 или 3.")
+
+
+if __name__ == "_main_":
+    main()
+
+    
