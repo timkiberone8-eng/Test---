@@ -1,14 +1,14 @@
 import psycopg2
 
 connection = psycopg2.connect(
-    dname ="postgres",
+    dbname ="postgres",
     user ="postgres",
     password="postgres",
     host="127.0.0.1",
     port="5432",
 )
 
-connection.au = True
+connection.autocommit = True
 
 cursor = connection.cursor()
 
