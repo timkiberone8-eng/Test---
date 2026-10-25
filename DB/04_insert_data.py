@@ -1,8 +1,6 @@
 import psycopg2
 from datetime import datetime
 
-import psycodg2
-import math
 
 connection = psycopg2.connect(
     dbname ="sales_data",
@@ -13,12 +11,6 @@ connection = psycopg2.connect(
 )
 
 cursor = connection.cursor()
-cursor.execute 
-SELECT sale_date, SUM(quantity) AS total_quantity
-FROM sales_data
-GROUP BY sale_date
-ORDER BY sale_date
-
 cursor.execute("DELETE FROM sales")
 sales_data = [
     ("laptop",10,700,datetime(2024,1,10)),
@@ -38,10 +30,3 @@ print("Данные добавлены")
 
 cursor.close()
 connection.close()
-
-pit.figure(figsize={10, 6})
-pit.bar(products,revenue , color="blue",alpha = 0.7)
-pit.title("Общая выручка из продукии")
-pit.xlabe[("Продукция")]
-pit.ylabel[("Выручка")]
-pit.show()
