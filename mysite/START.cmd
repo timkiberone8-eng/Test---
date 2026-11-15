@@ -1,6 +1,7 @@
 @echo off
 setlocal
 cd /d "%~dp0"
+set "DJANGO_SETTINGS_MODULE=mysite.settings"
 python -m django --version >nul 2>&1
 if errorlevel 1 (
     echo Django was not found. Run: python -m pip install -r requirements.txt
